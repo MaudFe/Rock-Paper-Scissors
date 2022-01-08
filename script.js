@@ -79,6 +79,7 @@ function playGame() {
   }
   if (document.body.contains(document.getElementById("res"))) {
     document.getElementById("res").remove();
+    numberRounds = 0;
   }
   return false;
 }
