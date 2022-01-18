@@ -6,17 +6,42 @@
   <title>Rock Paper Scissors</title>
 </head>
 <body>
-  <script type="text/javascript" src="script.js" defer></script>
-  <h1>ROCK PAPER SCISSORS</h1>
-  <div id="container">
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
-  </div>
-  <div id="results">
-    <div>Your score is: <span id="player-score">0</span> pts</div>
-    <div>Computer score is: <span id="computer-score">0</span> pts</div>
-    <div>Tie rounds: <span id="tie-score">0</span> pts</div>
-  </div>
+  <section id="game">
+
+    <div class="title">Rock Paper Scissors</div>
+
+    <p class="rules">You need to win five (5) rounds to win the game! Just as a remainder: 
+      <ul>
+        <li>Rock beats Scissors,</li>
+        <li>Scissors beat Paper,</li>
+        <li>Paper beats Rock!</li>
+      </ul>
+      GLHF (Good Luck Have Fun)!
+    </p>
+
+    <div class="scores">
+      <div class="player">
+        <h2>Player Score</h2>
+        <p class="p-score count">0</p>
+      </div>
+      <div class="computer">
+        <h2>Computer Score</h2>
+        <p class="c-score count">0</p>
+      </div>
+    </div>
+
+    <div class="options">
+      <button class="button" id="rock">Rock</button>
+      <button class="button" id="paper">Paper</button>
+      <button class="button" id="scissors">Scissors</button>
+    </div>
+
+    <div id="end-game">
+      <p class="result"></p>
+      <button class="new-game">New Game</button>
+    </div>
+
+  </section>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 </html>
